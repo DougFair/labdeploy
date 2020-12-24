@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h1>Paper Display</h1>
+
+
+<% if(papers) { %>
+<% papers.forEach(paper => { %>        
+        <div class="paperItem" style="margin-bottom: 10px">
+            <span class="title"><%= paper.title %></span>
+            <span class="authors"><%= paper.authors %></span>
+            <span class="year">(<%= paper.year %>)</span>
+            <span class="journal" style="text-transform:capitalize"><%= paper.journal %>, </span>
+            <span class="volume"><%= paper.volume %>:</span>
+            <span class="pages"><%= paper.pages %>, </span>
+            <span class="doi"><%= paper.doi %>, </span>
+            <span class="pmid">PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/<%=paper.pmid%>" target="_blank" rel="noopener noreferrer"><%= paper.pmid %></a></span>
+        </div>
+<% }) %>
+<% } %>
+
+<%- include('partials/footer') %>

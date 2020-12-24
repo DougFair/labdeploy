@@ -1,0 +1,53 @@
+.createDocumentContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.createDocumentHeading {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.addDocumentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.documentInput{
+    height: 1.5rem;
+    width: 400px;
+    border: 1px black solid;
+    margin-bottom: 35px;
+    padding: 5px
+}
+
+.documentFormLabel {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    font-weight: bold ;
+    margin-bottom: 5px;
+} 
+
+.blogPostAddButton {
+    width: 100px;
+    height: 2rem;
+    background-color:steelblue;
+    color: white;
+    border: 1px solid black;
+    margin: 5px 0 20px 0
+}
+
+.uploadFileInput {
+    margin-top: 0;
+}
+
+.uploadForm {
+    margin-top: 0;
+}

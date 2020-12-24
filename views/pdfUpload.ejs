@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="container">
+
+<form action="/pdfCreate" method="POST" enctype="multipart/form-data">
+    <div class="uploadForm">
+        <label for="fileUpload">Select file to upload</label>
+        <input type="file" class="uploadfile" name="file" id="file-Upload" placeholder="Upload pdf file">
+    </div>
+    <div class="uploadForm">
+        <input type="text"  class="uploadfile" name="fileName" placeholder="Input file name to display">
+    </div>
+    <div class="uploadForm">
+        <button type="submit" value="Upload PDF">Upload Paper Info</button>
+    </div>
+</form>
+
+<%- include('partials/footer') %>

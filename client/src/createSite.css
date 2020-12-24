@@ -1,0 +1,113 @@
+.createSiteContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr {
+    border: 0.5px solid lightgray;
+    margin: 25px 0
+}
+
+.createSiteIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createSiteDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.descriptorPara {
+    margin: 5px 0;
+}
+
+.descriptorHeading {
+    margin: 5px 0;
+    color: indianred
+}
+
+.descriptorHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.createSiteDotPoint {
+    margin: 2px 0;
+}
+
+.formDescriptor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.createSiteForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.formLabel {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    font-weight: bold ;
+    margin-bottom: 5px;
+} 
+
+.createSiteInput {
+    height: 1.5rem;
+    width: 400px;
+    border: 1px black solid;
+    padding: 5px;
+    margin-bottom: 25px;
+    
+}
+
+.required {
+    color: rgb(156, 156, 156);
+    font-style: italic;
+    font-weight: 300;
+    justify-content: bottom;
+}
+
+.rowInput {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+}
+
+.smallInput {
+    height: 1.5rem;
+    width: 50px;
+    border: 1px black solid;
+}
+
+.smallInputLabel {
+    margin-right: 20px;
+    margin: 10px 20px 10px 0
+}
+
+.createButton{
+    width: 250px;
+    height: 2rem;
+    background-color:steelblue;
+    color: white;
+    border: 1px solid black;
+    margin: 20px 0 50px 0
+}
+
+
+.customiseHeading {
+    color: steelblue;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

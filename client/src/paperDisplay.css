@@ -1,0 +1,118 @@
+.displayPaperContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading{
+    margin-bottom: 0;
+}
+
+#galleryButton {
+    margin: 10px
+}
+
+#listButton {
+    margin: 10px
+}
+
+.galleryStyle {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.listStyle {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.displayPaperHeading {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.PaperDisplayBox {
+    border: 1px solid grey; 
+    /* margin-bottom: 2px; */
+    width: 255px;
+    height:325px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    -moz-box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    margin: 0 10px 5px 10px
+}
+
+.paperYear {
+    font-weight: bolder;
+    margin: 0 0 5px 10px;
+    color: grey;
+}
+
+.paperYearDiv {
+    font-weight: bolder;
+    margin: 0 0 5px 10px;
+    color: steelblue;
+    width: 100vw;
+    /* display:flex;
+    flex-direction:column;
+    flex-wrap: wrap; */
+}
+
+
+
+.paperDetails {
+    margin: 0;
+}
+
+.paperTypeComments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.displaySelectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.displaySelectorUnit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin: 0px 40px 20px 40px
+}
+
+.displaySelectorHeading {
+    margin-bottom: 5px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.radioButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdfDisplayRow{
+    display:flex;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+}
+
+.pdfDisplay{
+    margin:0
+}
+#pdfIcon {
+    color:red
+}

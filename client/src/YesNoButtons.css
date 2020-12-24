@@ -1,0 +1,30 @@
+.buttonsContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yesbutton{
+    width:60px;
+    height:1.5rem;
+    color:white;
+    background-color:green;
+    border: 1px solid black;
+    margin:5px
+}
+
+.nobutton{
+    width:60px;
+    height:1.5rem;
+    color:white;
+    background-color:rgb(192, 0, 0);
+    border: 1px solid black;
+    margin:5px
+}

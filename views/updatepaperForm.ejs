@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<h1>Update or edit your paper</h1>
+
+<form action="/updatePaper/<%=paper.id%>?_method=PUT" method="POST">
+        
+        <label for="title">Title</label> 
+        <input type="text" id="title" name="title" value="<%= paper.title %>">
+
+        <label for="authors">Authors</label> 
+        <input type="text" id="authors" name="authors" value="<%= paper.authors %>">
+        
+        <label for="journal">Journal</label> 
+        <input type="text" id="authors" name="journal" value="<%= paper.journal %>"> 
+
+        <label for="year">Year</label> 
+        <input type="number" id="year" name="year" value="<%= paper.year %>">
+
+        <label for="volume">Volume</label> 
+        <input type="number" id="volume" name="volume" value="<%= paper.volume %>"> 
+
+        <label for="pages">Pages</label> 
+        <input type="text" id="pages" name="pages" value="<%= paper.pages %>">
+
+        <label for="doi">DOI</label> 
+        <input type="text" id="doi" name="doi" value="<%= paper.doi %>">   
+        
+        <label for="doi">PMID</label> 
+        <input type="text" id="pmid" name="pmid" value="<%= paper.pmid %>">
+
+        <label for="type">Type</label> 
+        <select id="type" name="type">
+            <option>Primary Journal</option>
+            <option>Review Journal</option>
+            <option>Book Chapter</option>
+            <option>Letter</option>
+        </select>
+        <textarea name="comments" rows="4" cols="50"><%= paper.comments %></textarea>
+        
+        <button type="submit">Add a New Publication</button>
+    </form>
+    
+<%- include('partials/footer') %>

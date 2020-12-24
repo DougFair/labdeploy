@@ -1,0 +1,30 @@
+.mediaAddFormDisplayContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px
+}
+
+
+.mediaAddFormSubHeading {
+    margin-top: 0;
+}
+
+.formContainer {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.publicPDFForm {
+    display:flex;
+    justify-content: center;
+}
+
+.publicPDFWarning {
+    color:grey;
+    font-style:italic; 
+    font-size:1rem;
+    margin-top: 0;
+}

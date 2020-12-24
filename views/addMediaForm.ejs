@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+
+<h1>Add a PDF or Image to your paper: </h1>
+
+<h3><%= paper.title %></h3>
+<form action="/pdfCreate/<%= paper.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <div class="uploadForm">
+        <label for="pdfUpload">Select file to upload</label>
+        <input type="file" id="pdfUpload" class="uploadfile" name="file" id="file-Upload" placeholder="Upload pdf file">
+    </div>
+    <div class="uploadForm">
+        <button type="submit" value="Upload PDF">Upload Paper Info</button>
+    </div>
+</form>
+
+<form action="/photoCreate/<%= paper.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <div class="uploadForm">
+        <label for="photoUpload">Select file to upload</label>
+        <input type="file" id="photoUpload" class="uploadfile" name="file" id="file-Upload" placeholder="Upload pdf file">
+    </div>
+    <div class="uploadForm">
+        <button type="submit" value="Upload PDF">Upload photo file</button>
+    </div>
+</form>  
+
+<%- include('partials/footer') %>

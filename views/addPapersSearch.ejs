@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<div class="container" style="text-align: center">
+    <h1>Search For Papers To Add To Your Page</h1>
+    <h2>You can find papers either by searching for an author or by title.</h3>
+    
+    <h3>Enter an author name as you would in Pubmed (e.g. Smith AB) </h4>
+    <form class="findPapersForm" action="/search" method="POST">
+        <input type="text" name="author" class="textInput" placeHolder="Author">
+        <button class="submitButton">Submit</button>
+    </form>
+
+    <h3>Otherwise, enter a specific article title you want to add</h3>
+    <form class="findPapersForm" action="/search" method="POST">
+        <input type="text" name="title" class="textinput" 
+        placeHolder="Title">
+        <button class="submitButton">Submit</button>
+    </form>
+
+</div>
+
+<%- include('partials/footer') %>

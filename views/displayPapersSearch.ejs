@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+<h1>Search Results</h1>
+
+
+<% if(paperList) { %>
+<% paperList.forEach(paper => { %>
+    <form action="/paperSelect" method="POST">
+        <input type="hidden" name="title" value="<%= paper.title %>">
+        <input type="hidden" name="pmid" value="<%= paper.pmid %>">
+        <input type="hidden" name="authors" value="<%= paper.authors %>">
+        <input type="hidden" name="journal" value="<%= paper.journal %>">
+        <input type="hidden" name="year" value="<%= paper.year %>">
+        <input type="hidden" name="volume" value="<%= paper.volume %>">
+        <input type="hidden" name="pages" value="<%= paper.pages %>">
+        <input type="hidden" name="doi" value="<%= paper.doi %>">
+        <input type="hidden" name="type" value="journal article">
+        <div class="paperItem" style="margin-bottom: 10px">
+        
+        <input type="checkbox" name="selection" value="1">
+        <input type="hidden" name="selection" value="0">
+
+            <span class="title"><%= paper.title %></span>
+            <span class="authors"><%= paper.authors %></span>
+            <span class="year">(<%= paper.year %>)</span>
+            <span class="journal" style="text-transform:capitalize"><%= paper.journal %>, </span>
+            <span class="volume"><%= paper.volume %>:</span>
+            <span class="pages"><%= paper.pages %>, </span>
+            <span class="doi"><%= paper.doi %>, </span>
+            <span class="pmid">PMID: <a href= "https://www.ncbi.nlm.nih.gov/pubmed/<%=paper.pmid%>" target="_blank" rel="noopener noreferrer"><%= paper.pmid %></a></span>
+        </div>
+<% }) %>
+    <input type="submit" value="Submit">
+    </form>
+<% } %>
+
+<%- include('partials/footer') %>

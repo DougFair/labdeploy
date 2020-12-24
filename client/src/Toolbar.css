@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family:'Roboto Condensed', sans-serif;
+    z-index: 1000;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px 
+}
+
+/* .link:hover{
+    color: yellow;
+    font-weight: 600
+} */
+
+.link:active{
+    color: black
+}

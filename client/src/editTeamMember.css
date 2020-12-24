@@ -1,0 +1,79 @@
+.editTeamContainer {
+    margin: 50px 50px 20px 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleHeadDoc {
+    margin-bottom: 20px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.editPerson {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.editDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.docHR {
+    margin: 0;
+    border: 1px solid lightgrey;
+    width:100%
+    }  
+
+
+.editPersonCheckbox{
+    margin-right: 10px;
+}
+
+.contactDetails {
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.uploadForm {
+    margin: 20px 0;
+}
+
+.teamMemberFormLabel {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    font-weight: bold ;
+    margin-bottom: 5px;
+} 
+
+.categoryHeading {
+    color:rgb(143, 143, 143);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.documentItem {
+    font-weight: bold;
+     margin-top: 0;
+}
+

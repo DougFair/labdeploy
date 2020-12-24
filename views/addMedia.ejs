@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<h1>Select the paper you want to add a PDF or image to...</h1>
+
+<% if(papers) { %>
+<% papers.forEach(paper => { %>
+    <form action="/addMedia" method="POST">
+        
+        <div class="paperItem" style="margin-bottom: 10px">
+        
+            <input type="checkbox" name="selection" value="1">
+            <input type="hidden" name="selection" value="0">
+            <input type="hidden" name="id" value="<%= paper._id %>">
+            <span class="title"><%= paper._id %></span>
+            <span class="title"><%= paper.title %></span>
+            <span class="authors"><%= paper.authors %></span>
+            <span class="year">(<%= paper.year %>)</span>
+            <span class="journal" style="text-transform:capitalize"><%= paper.journal %>, </span>
+            <span class="volume"><%= paper.volume %>:</span>
+            <span class="pages"><%= paper.pages %>, </span>
+            <span class="doi"><%= paper.doi %>, </span>
+            <span class="pmid">PMID: <a href= "https://www.ncbi.nlm.nih.gov/pubmed/<%=paper.pmid%>" target="_blank" rel="noopener noreferrer"><%= paper.pmid %></a></span>
+        
+        </div>
+<% }) %>
+    <input type="submit" value="Submit">
+    </form>
+<% } %>
+
+<%- include('partials/footer') %>

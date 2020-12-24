@@ -1,0 +1,40 @@
+.deleteMediaContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: "center";
+}
+
+.deleteMediaTitle {
+    color:steelblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+hr {
+    width:100%;
+    border: 1px solid lightgrey;
+}
+
+.deleteMediaInstruction {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.deleteMediaForm {
+    display: flex;
+    justify-content: center;
+}
+
+.deleteMediaButton {
+    width: 120px;
+    height: 2rem;
+    background-color:steelblue;
+    color: white;
+    border: 1px solid black;
+    margin-top: 5px; 
+}

@@ -1,0 +1,81 @@
+.homeContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerTitle {
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+}
+
+.bannerSubheading {
+    font-size: 2rem;
+    margin: 10px 0 10px 0;
+}
+
+.bannerMinorheading {
+    font-size: 1.5rem;
+    margin: 10px 0 30px 0;
+}
+
+.labDescription {
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    padding: 0px;
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: justify;
+    box-sizing: border-box;
+    /* -webkit-box-shadow: 15px 15px 19px -4px rgba(171,171,171,1);
+    -moz-box-shadow: 15px 15px 19px -4px rgba(171,171,171,1);
+    box-shadow: 15px 15px 19px -4px rgba(171,171,171,1); */
+    /* background-color: #d3d3d3; */
+}
+
+.labDescriptionText {
+    margin: 0;
+    color: black;
+    font-size: 1.2rem
+}
+
+.bannerPhoto {
+    width:70%; 
+     margin-bottom: 10px;
+     border-radius: 15px;
+     -webkit-box-shadow: 15px 15px 19px -4px rgba(171,171,171,1);
+     -moz-box-shadow: 15px 15px 19px -4px rgba(171,171,171,1);
+     box-shadow: 15px 15px 19px -4px rgba(171,171,171,1);
+}
+
+@media (max-width: 460px) {
+    .bannerTitle {
+        font-size: 2.8rem;
+        margin-bottom: 0
+    }
+    .bannerText {
+        width: 60%;
+    }
+    .bannerSubtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .bannerTitle {
+        font-size: 2.6rem;
+    }
+    .container {
+        height: 5%;
+    }
+}

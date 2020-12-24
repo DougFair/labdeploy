@@ -1,0 +1,79 @@
+.pageContainer {
+    margin: 0 50px 5px 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.picYear{
+    color: grey;
+    margin-bottom: 0;
+}
+
+.picEvent{
+    margin-bottom: 10px;
+}
+
+.picCaption{
+    width:200px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.eventYearContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.photoCaptionContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.photoPlusCaption{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px
+}
+
+.picCaption{
+    width: auto
+}
+
+.titlePhotos{
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.portrait {
+    margin-top: 0;
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.landscape {
+    margin-top: 0;
+    height: 250px;
+    width: auto; 
+    display: flex;
+    align-items: center;
+}
+/* .labimage {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+} */
+
+.noPhotoMessage{
+    text-align: center;
+}

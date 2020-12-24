@@ -1,0 +1,46 @@
+.blogContainer {
+    margin: 0px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 60%
+}
+
+.blogTitle {
+    margin-bottom: 0;
+    color: black
+}
+
+.blogDate{
+    margin: 5px 0 2px 0;
+    color:grey;
+    font-size: 0.7rem;
+
+}
+
+.blogText {
+    display: flex;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.blogTextPlusLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.linkURL {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.textImage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blogImage {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}

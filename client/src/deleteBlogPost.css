@@ -1,0 +1,28 @@
+.deleteBlogPostContainer {
+    margin: 50px 50px 20px 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.deleteBlogItem{
+    display: flex;
+    align-items: center;
+    margin-top: 0;   
+}

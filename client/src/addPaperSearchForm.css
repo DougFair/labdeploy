@@ -1,0 +1,49 @@
+.addPaperSearchFormContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addPaperSearchFormHeading {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+.addPaperSearchFormLabel {
+    margin-bottom: 5px;
+}
+
+.searchInput {
+    width: 450px;
+    height: 2rem;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.addPaperSearchForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.findPapersForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchButton {
+        width: 100px;
+        height: 2rem;
+        background-color:steelblue;
+        color: white;
+        border: 1px solid black;
+        margin-top: 5px 
+}
+    

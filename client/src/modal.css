@@ -1,0 +1,47 @@
+.modalBox {
+    width:255px;
+    height: 220px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 2px 5px 5px 5px;
+    box-sizing: border-box;
+    background-color: steelblue;
+    -webkit-box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    -moz-box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    box-shadow: 10px 10px 7px -8px rgba(94,94,94,1);
+    margin: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modalPaperTitle {
+    font-size: 12px;
+    font-weight: bolder;
+    color:White;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.modalPaperInfo {
+    font-size: 10px;
+    color:White;
+    margin: 0;
+}
+
+.modalPaperInfoRow {
+    font-size: 10px;
+    color:White;
+    margin: 0 0 2px 0;
+    padding: 0
+}
+
+.modalRow {
+    display:flex;
+    align-items:center;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+#pdfIconGallery {
+    color:white
+}

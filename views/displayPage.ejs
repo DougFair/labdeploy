@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<% console.log("url1" + JSON.stringify(path)) %>
+
+
+<h1>Add a PDF or Image to your paper: </h1>
+<object style="width: 200px; height: 200px" data="<%= path %>">
+</object>
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<h1>Admin Home Page</h1>
+
+<h3>What would you like to do?</h3>
+<div class="adminForm">
+    <form action="/addPaperSearch" method="GET">
+        <button type="submit">Add Publication - Search</button>
+    </form>
+    
+    <form action="/addPaperManual" method="GET">
+        <button type="submit">Add Publication - Manual</button>
+    </form>
+
+    <form action="/updatePaper" method="GET">
+        <button type="submit">Update Publication</button>
+    </form>
+    <form action="/deletePaper" method="GET">
+        <button type="submit">Delete Publication</button>
+    </form>
+        <form action="/addMedia" method="GET">
+        <button type="submit">Add a PDF or Image to a Publication</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,86 @@
+.addBlogPostContainer {
+    margin: 50px 50px 0 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.addBlogPostHeading {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+
+.addBlogItemForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.blogTextArea{
+margin-bottom: 10px;
+}
+
+.blogLinkForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.linkInputForm {
+    width: 300px; border: 1px black solid;
+    height: 1.5rem;
+    border: 1px black solid;
+    margin-bottom: 25px;
+}
+
+.blogPostTitleInput{
+    height: 1.5rem;
+    width: 400px;
+    border: 1px black solid;
+    margin-bottom: 25px;
+    padding: 5px
+}
+
+.blogTextArea {
+    padding: 5px;
+}
+
+.commentTextArea {
+    padding: 5px;
+}
+
+.blogFormLabel {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    font-weight: bold ;
+    margin-bottom: 5px;
+} 
+
+.linkFormLabel {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    font-weight: bold ;
+    margin-bottom: 5px;
+    margin-left: 100px
+}
+
+.blogPostAddButton {
+    width: 100px;
+    height: 2rem;
+    background-color:steelblue;
+    color: white;
+    border: 1px solid black;
+    margin: 5px 0 20px 0
+}
+
+.noItemsReturn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

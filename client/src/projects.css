@@ -1,0 +1,41 @@
+.projectContainer {
+    margin: 50px 50px 20px 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageDescription {
+    margin-top: 0;
+    width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.image {
+    margin-right: 20px;
+    width: 200px;
+}
+
+.projectHR{
+    border: 1px solid lightgrey;
+    margin: 10px 0 0 0;
+    width: 100%
+}
