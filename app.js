@@ -37,11 +37,11 @@ app.use(methodOverride("_method"));
 app.use(express.static(__dirname, + "/public"));
 app.use("/images",express.static(__dirname, + "/images"));
 app.use("/pdf", express.static(__dirname, + "/pdf"));
-app.use(express.static(path.join(__dirname, "client", "build"))
+// app.use(express.static(path.join(__dirname, "client", "build"))
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// });
 
 
 app.set("view engine", "ejs");
