@@ -19,8 +19,10 @@ const homeRoutes = require("./routes/home");
 const mediaRoutes = require("./routes/media");
 const searchRoutes = require("./routes/search");
 const adminRoutes = require("./routes/admin")
-const siteRoutes = require("./routes/siteInfo")
-const blogRoutes = require("./routes/blog")
+const siteinfo = require("./routes/siteinfo")
+app.use("/routes/siteinfo",siteinfo);
+const blog = require("./routes/blog")
+app.use("/routes/blog", blog);
 const teamRoutes = require("./routes/team")
 const labdocumentRoutes = require("./routes/labdocuments")
 const projectRoutes = require("./routes/project")
@@ -35,6 +37,12 @@ app.use(methodOverride("_method"));
 app.use(express.static(__dirname, + "/public"));
 app.use("/images",express.static(__dirname, + "/images"));
 app.use("/pdf", express.static(__dirname, + "/pdf"));
+app.use(express.static(path.join(__dirname, "client", "build"))
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 
 app.set("view engine", "ejs");
 
@@ -43,12 +51,13 @@ app.use(homeRoutes);
 app.use(mediaRoutes);
 app.use(searchRoutes);
 app.use(adminRoutes);
-app.use(siteRoutes);
-app.use(blogRoutes);
+// app.use(siteRoutes);
+// app.use(blogRoutes);
 app.use(teamRoutes);
 app.use(labdocumentRoutes);
 app.use(projectRoutes);
 app.use(labphotoRoutes);
+
 
 app.use(express.static(path.join(__dirname, "client", "build"))
 
@@ -58,9 +67,9 @@ app.get("*", (req, res) => {
 
 
 
-let PORT = process.env.PORT || 3001
+let PORT = process.env.PORT || 8000
 
-mongoose.connect("mongodb+srv://doug:Clone13!@publications-1hgx7.mongodb.net/publications?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true  })
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true  })
 .then (() =>{
 app.listen(PORT, ()=>
     console.log("server has started")

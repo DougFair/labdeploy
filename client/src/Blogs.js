@@ -11,12 +11,11 @@ state ={
       }
 
 componentDidMount (){
-    axios.get("http://localhost:3001/blogPosts")
-    .then(response => {
-    let sortedResponse = response.data.sort(function(a, b){return b.dateCreated - a.dateCreated})
-    this.setState({blogs: sortedResponse}) 
-    })
-}
+        axios.get("/routes/blog/blogPosts")
+        .then(response => {
+        let sortedResponse = response.data.sort(function(a, b){return b.dateCreated - a.dateCreated})
+        this.setState({blogs: sortedResponse}) 
+        })}
 
 
 render() {
