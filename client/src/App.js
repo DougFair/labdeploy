@@ -127,8 +127,8 @@ render() {
             blogHeading={this.state.blogHeading}
             blogHeadingColor={this.state.blogHeadingColor}
             blogPostHeadingColor={this.state.blogPostHeadingColor}
-            />
-            </div> */}
+            /> */}
+            </div>
            </>
             }
             />
