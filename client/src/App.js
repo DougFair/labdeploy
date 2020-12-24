@@ -69,20 +69,20 @@ class App extends Component {
     currentPage: 1,
   }
  
-  // componentDidMount () {
-  //   axios.get("/routes/siteinfo/siteInfo")
-  //   .then(response => {
-  //     if (response.data[0].labName){
+  componentDidMount () {
+    axios.get("/routes/siteinfo/siteInfo")
+    .then(response => {
+      if (response.data[0].labName){
   
-  //       let {_id, labName, labNameSize, labNameColor, labDescription, labSubheading, labSubheadingSize, labSubheadingColor, labMinorheading, labMinorheadingSize, labMinorheadingColor, menuBarColor, menuBarTextColor,labDescriptionColor, labDescriptionBkdColor, blogHeading, blogHeadingColor, blogPostHeadingColor, publicationPageHeadingColor, projectPageHeadingColor,projectHeadingColor, peoplePageHeadingColor,peopleHeadingColor, photoPageHeadingColor, photoHeadingColor, themeColor} = response.data[0]
+        let {_id, labName, labNameSize, labNameColor, labDescription, labSubheading, labSubheadingSize, labSubheadingColor, labMinorheading, labMinorheadingSize, labMinorheadingColor, menuBarColor, menuBarTextColor,labDescriptionColor, labDescriptionBkdColor, blogHeading, blogHeadingColor, blogPostHeadingColor, publicationPageHeadingColor, projectPageHeadingColor,projectHeadingColor, peoplePageHeadingColor,peopleHeadingColor, photoPageHeadingColor, photoHeadingColor, themeColor} = response.data[0]
         
-  //       this.setState({labName, labNameSize, labNameColor, labDescription, labSubheading, labSubheadingSize,labSubheadingColor, menuBarColor, menuBarTextColor, labDescriptionColor, labDescriptionBkdColor,  labMinorheading, labMinorheadingSize, labMinorheadingColor,  blogHeading, blogHeadingColor, blogPostHeadingColor, publicationPageHeadingColor,projectPageHeadingColor, projectHeadingColor, peoplePageHeadingColor,peopleHeadingColor, photoPageHeadingColor, photoHeadingColor,themeColor, id: _id})
+        this.setState({labName, labNameSize, labNameColor, labDescription, labSubheading, labSubheadingSize,labSubheadingColor, menuBarColor, menuBarTextColor, labDescriptionColor, labDescriptionBkdColor,  labMinorheading, labMinorheadingSize, labMinorheadingColor,  blogHeading, blogHeadingColor, blogPostHeadingColor, publicationPageHeadingColor,projectPageHeadingColor, projectHeadingColor, peoplePageHeadingColor,peopleHeadingColor, photoPageHeadingColor, photoHeadingColor,themeColor, id: _id})
   
-  //   } else {
-  //       this.setState({siteDataError: true})
-  //   }
-  // })
-  // }
+    } else {
+        this.setState({siteDataError: true})
+    }
+  })
+  }
 
 siteCreated = () => {
   axios.get("http:///routes/siteInfo/siteInfo")
@@ -123,11 +123,11 @@ render() {
             labdetails={this.state}
             />
              
-            {/* <Blogs
+            <Blogs
             blogHeading={this.state.blogHeading}
             blogHeadingColor={this.state.blogHeadingColor}
             blogPostHeadingColor={this.state.blogPostHeadingColor}
-            /> */}
+            />
             </div>
            </>
             }
