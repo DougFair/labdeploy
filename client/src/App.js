@@ -70,7 +70,7 @@ class App extends Component {
   }
  
 componentDidMount () {
-  axios.get("http://siteRoutes/siteInfo")
+  axios.get("http:///routes/siteInfo/siteInfo")
   .then(response => {
     if (response.data[0].labName){
 
@@ -85,7 +85,7 @@ componentDidMount () {
 }
 
 siteCreated = () => {
-  axios.get("http://siteRoutes/siteInfo")
+  axios.get("http:///routes/siteInfo/siteInfo")
   .then(response => {
     let {labName, labDescription, labSubheading, labMinorheading} = response.data[0]
     this.setState({labName, labDescription, labSubheading, labMinorheading, siteDataError: false})
@@ -93,7 +93,7 @@ siteCreated = () => {
 }
 
 siteEdited = () => {
-  axios.get("http://siteRoutes/siteInfo")
+  axios.get("http:///routes/siteInfo/siteInfo")
   .then(response => {
     let {labName, labDescription, labSubheading, labMinorheading,labNameColor,labNameSize,labSubheadingColor, labSubheadingSize, menuBarColor, menuBarTextColor,labDescriptionColor, labDescriptionBkdColor, labMinorheadingColor, labMinorheadingSize, blogHeading, blogHeadingColor, blogPostHeadingColor, projectPageHeadingColor, projectHeadingColor, peoplePageHeadingColor,peopleHeadingColor, photoPageHeadingColor, photoHeadingColor,themeColor} = response.data[0]
     
