@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 require('dotenv').config();
 var cors = require('cors')
-
+const path = require("path")
  
 app.use(cors())
 // Requiring models
@@ -37,6 +37,14 @@ app.use(methodOverride("_method"));
 app.use(express.static(__dirname, + "/public"));
 app.use("/images",express.static(__dirname, + "/images"));
 app.use("/pdf", express.static(__dirname, + "/pdf"));
+
+if (process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'))
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
+
+}
 // app.use(express.static(path.join(__dirname, "client", "build"))
 
 // app.get("*", (req, res) => {
@@ -59,11 +67,11 @@ app.use(projectRoutes);
 app.use(labphotoRoutes);
 
 
-app.use(express.static(path.join(__dirname, "./client/build"))
+// app.use(express.static(path.join(__dirname, "./client/build"))
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 
 
