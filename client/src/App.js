@@ -70,6 +70,8 @@ class App extends Component {
   }
  
   componentDidMount () {
+    const data1 = {keey1: "vakue1"}
+    axios.post("/routes/siteinfo/siteInfo", data1)
     axios.get("/routes/siteinfo/siteInfo")
     .then(response => {
       if (response.data[0].labName){
