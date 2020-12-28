@@ -19,10 +19,10 @@ const homeRoutes = require("./routes/home");
 const mediaRoutes = require("./routes/media");
 const searchRoutes = require("./routes/search");
 const adminRoutes = require("./routes/admin")
-const siteinfo = require("./routes/siteinfo")
-app.use("/routes/siteinfo",siteinfo);
-const blog = require("./routes/blog")
-app.use("/routes/blog", blog);
+const siteinfoRoutes = require("./routes/siteinfo")
+
+const blogRoutes = require("./routes/blog")
+
 const teamRoutes = require("./routes/team")
 const labdocumentRoutes = require("./routes/labdocuments")
 const projectRoutes = require("./routes/project")
@@ -59,8 +59,8 @@ app.use(homeRoutes);
 app.use(mediaRoutes);
 app.use(searchRoutes);
 app.use(adminRoutes);
-// app.use(siteRoutes);
-// app.use(blogRoutes);
+app.use(siteinfoRoutes);
+app.use(blogRoutes);
 app.use(teamRoutes);
 app.use(labdocumentRoutes);
 app.use(projectRoutes);
