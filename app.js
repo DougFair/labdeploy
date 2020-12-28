@@ -26,7 +26,7 @@ const mediaRoutes = require("./routes/media");
 const searchRoutes = require("./routes/search");
 const adminRoutes = require("./routes/admin")
 const siteinfoRoutes = require("./routes/siteinfo")
-app.use("/siteinfo", siteinfoRoutes);
+// app.use("/siteinfo", siteinfoRoutes);
 const blogRoutes = require("./routes/blog")
 const teamRoutes = require("./routes/team")
 const labdocumentRoutes = require("./routes/labdocuments")
@@ -35,7 +35,7 @@ const labphotoRoutes = require("./routes/pics")
 
 
 // Using routes
-// app.use(siteinfoRoutes);
+app.use(siteinfoRoutes);
 app.use(homeRoutes);
 app.use(mediaRoutes);
 app.use(searchRoutes);
