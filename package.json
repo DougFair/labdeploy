@@ -28,5 +28,6 @@
     "multer-s3": "^2.9.0",
     "pdf-image": "^2.0.0",
     "serve": "^11.3.2"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }

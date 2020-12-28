@@ -74,8 +74,8 @@ class App extends Component {
 
 
   componentDidMount () {
-  axios.post("/siteInfo", {keysa: "kjdfjkhfdjhk"})
-    axios.get("/siteInfo")
+  axios.post("/siteinfo/siteInfo", {keysa: "kjdfjkhfdjhk"})
+    axios.get("/siteinfo/siteInfo")
     .then(response => {
       if (response.data[0].labName){
   
