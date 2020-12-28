@@ -11,7 +11,7 @@ state ={
       }
 
 componentDidMount (){
-        axios.get("/routes/blog/blogPosts")
+        axios.get("/blogPosts")
         .then(response => {
         let sortedResponse = response.data.sort(function(a, b){return b.dateCreated - a.dateCreated})
         this.setState({blogs: sortedResponse}) 

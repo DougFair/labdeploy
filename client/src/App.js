@@ -75,7 +75,7 @@ class App extends Component {
 
   componentDidMount () {
   
-    axios.get("/routes/siteinfo/siteInfo")
+    axios.get("/siteInfo")
     .then(response => {
       if (response.data[0].labName){
   
