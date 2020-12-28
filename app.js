@@ -20,7 +20,7 @@ const mediaRoutes = require("./routes/media");
 const searchRoutes = require("./routes/search");
 const adminRoutes = require("./routes/admin")
 const siteinfoRoutes = require("./routes/siteinfo")
-
+// app.use("/siteinfo", siteinfoRoutes);
 const blogRoutes = require("./routes/blog")
 
 const teamRoutes = require("./routes/team")
@@ -45,11 +45,6 @@ if (process.env.NODE_ENV === 'production'){
     })
 
 }
-// app.use(express.static(path.join(__dirname, "client", "build"))
-
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-// });
 
 
 app.set("view engine", "ejs");
@@ -67,12 +62,13 @@ app.use(projectRoutes);
 app.use(labphotoRoutes);
 
 
-// app.use(express.static(path.join(__dirname, "./client/build"))
+if (process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'))
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
 
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
-
+}
 
 
 let PORT = process.env.PORT || 8000
