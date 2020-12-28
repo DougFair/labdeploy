@@ -74,7 +74,7 @@ class App extends Component {
 
 
   componentDidMount () {
-  axios.post("/siteinfo/siteInfo", {keysa: "kjdfjkhfdjhk"})
+    axios.post("/siteinfo/siteInfo", {keysa: "kjdfjkhfdjhk"})
     axios.get("/siteinfo/siteInfo")
     .then(response => {
       if (response.data[0].labName){
@@ -128,11 +128,11 @@ render() {
             labdetails={this.state}
             />
              
-            <Blogs
+            {/* <Blogs
             blogHeading={this.state.blogHeading}
             blogHeadingColor={this.state.blogHeadingColor}
             blogPostHeadingColor={this.state.blogPostHeadingColor}
-            />
+            /> */}
             </div>
            </>
             }

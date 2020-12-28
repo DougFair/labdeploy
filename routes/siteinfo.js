@@ -16,6 +16,7 @@ router.get("/siteInfo", (req,res) => {
         }
         });
     })
+  
     router.post("/siteInfo", (req,res) => {
       console.log("Get sitey" )
       console.log("Get sitey" + JSON.stringify(req.body))
